@@ -18,7 +18,8 @@ app.use("/images", express.static(path.join(__dirname, "/images")));
 
 
 app.use(cors({
-  origin : ["http://localhost:3000", "https://shailkas-blog.onrender.com"],
+  // origin : ["http://localhost:3000", "https://shailkas-blog.onrender.com"],
+  origin : "*",
 }));
 
 mongoose
